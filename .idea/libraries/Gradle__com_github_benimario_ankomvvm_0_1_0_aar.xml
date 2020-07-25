@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.benimario:ankomvvm:0.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5134855fabf3feb3628eb778d5946579/jetified-ankomvvm-0.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5134855fabf3feb3628eb778d5946579/jetified-ankomvvm-0.1.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.benimario/ankomvvm/0.1.0/9b4be6a9d14670c6271e834f6476e70cdf821ed2/ankomvvm-0.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
