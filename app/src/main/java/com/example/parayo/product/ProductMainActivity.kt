@@ -3,6 +3,7 @@ package com.example.parayo.product
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import com.example.parayo.R
+import com.example.parayo.product.list.ProductListPagerAdapter
 import net.codephobia.ankomvvm.components.BaseActivity
 import org.jetbrains.anko.AnkoComponent
 import org.jetbrains.anko.setContentView
@@ -16,6 +17,11 @@ class ProductMainActivity :
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             ui.setContentView(this)
+            // TabLayout과 ViewPager를 연결해주는 코드
+            ui.viewpager.adapter =
+                ProductListPagerAdapter(supportFragmentManager) // ViewPager의 adapter로 앞서 만든 ProductListPagerAdapter를 생성해 넣어줌.
+            ui.tablayout.setupWithViewPager(ui.viewpager) // ProductMainUI에 정의된 TabLayout의 setupwithViewPager() 함수를 이용해 ViewPager와 연결.
+
             setupDrawerListener()
         }
 

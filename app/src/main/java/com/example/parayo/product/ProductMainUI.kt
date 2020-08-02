@@ -67,16 +67,16 @@ class ProductMainUI (
                             id = generateViewId() // ViewPager를 TabLayout과 연동하는 경우 id 값이 필수이기 때문에 View, generateViewId() 함수로 아이디를 생성.
                         }.lparams(matchParent, matchParent)
                     }
+                }
 
-                    floatingActionButton {
-                        imageResource = R.drawable.plus
-                        onClick { viewModel.openRegistrationActivity() }
-                    }.lparams {
-                        bottomMargin = dip(20)
-                        marginEnd = dip(20)
-                        gravity = Gravity.END or Gravity.BOTTOM
-                    }
-                }.lparams(matchParent, matchParent)
+                floatingActionButton {
+                    imageResource = R.drawable.plus
+                    onClick { viewModel.openRegistrationActivity() }
+                }.lparams {
+                    bottomMargin = dip(20)
+                    marginEnd = dip(20)
+                    gravity = Gravity.END or Gravity.BOTTOM
+                }
             }
 
             // 3 navigationView 함수를 이용해 네비게이션 드로어를 생성해줌.
